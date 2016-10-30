@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<!--ANGULAR 1.5.8 -->
+<script src="js/angular/angular.min.js"></script>
+<script src="js/angular/angular-route.min.js"></script>
+
+<body ng-app="main">
+
+<p><a href="#/">Main</a></p>
+
+<p><a href="#resetpassword">Reset Password</a></p>
+<p><a href="#nonexistdomain">Non Route Domain</a></p>
+<p><a href="#list">List JSON File</a></p>
+
+<div ng-view></div>
+
+<script src="app.js"></script>
+<script src="js/services/listService.js"></script>
+
+<script src="js/controllers/loginController.js"></script>
+<script src="js/controllers/resetPassController.js"></script>
+<script src="js/controllers/listController.js"></script>
+
+
+</body>
+</html>
+

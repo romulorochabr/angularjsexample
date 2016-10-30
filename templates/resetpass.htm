@@ -1,0 +1,11 @@
+<div ng-controller="ResetPassController as resetController">
+	<h1>Reset Password</h1>
+	<p>Inform your password and click Send.</p>
+
+	<p> Email : <input type="text" name="email" ng-model="resetController.email"></p>
+	<p> <button ng-click="resetController.send()">Send!</button> </p>
+	
+	<p>{{resetController.email}}</p>
+	<p>{{resetController.msg}}</p>
+	
+</div>

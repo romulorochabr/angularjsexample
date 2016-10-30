@@ -1,0 +1,18 @@
+<div ng-controller="ListController as listController">
+	<h1> Example of List Retrieving JSON Data from API </h1>
+
+
+	<p><button ng-click="listController.retrieveAllCustomers()" > Retrieve Customers</button></p>
+
+	<p>{{listController.customers}}</p>
+
+	<p>{{listController.msg}}</p>
+
+	<table>
+        <tr ng-repeat="c in listController.customers.records">
+            <td>{{ c.Name }}</td>
+            <td>{{ c.City }}</td>
+        </tr>
+    </table>
+
+</div>

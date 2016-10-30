@@ -1,0 +1,12 @@
+<div ng-controller="LoginController as loginController">
+	<h1>Main Page</h1>
+
+	<p> Email : <input type="text" name="email" ng-model="loginController.email"></p>
+	<p> Password:  <input type="password" name="password" ng-model="loginController.password"></p>
+	<p> <button ng-click="loginController.signin()">Sign in</button>
+
+	<p><h3>Binding values</h3></p>
+	<p>{{loginController.email}}</p>
+	<p>{{loginController.password}}</p>
+	<p>{{loginController.msg}}</p>
+</div>
